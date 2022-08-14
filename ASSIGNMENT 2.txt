@@ -1,0 +1,199 @@
+1.
+#include<stdio.h>
+int main()
+{ 
+int num;
+printf("enter num\n");
+scanf("%d",&num);
+printf("Last digit = %d",num%10);
+return 0;
+}
+
+---------------------------------------------------------------------
+
+2.
+#include<stdio.h>
+int main()
+{ 
+int num
+printf("enter num\n");
+scanf("%d",&num);
+printf("number without last digit = %d",num/10);
+return 0;
+}
+
+---------------------------------------------------------------------
+
+3.
+#include<stdio.h>
+int main()
+{ 
+int a=10,b=25,c;
+c = a;
+a = b;
+b = c;
+printf("swapped no.s are a = %d and b = %d",a,b);
+return 0;
+}
+
+---------------------------------------------------------------------
+
+4.
+#include<stdio.h>
+int main()
+{ 
+int a=10,b=25;
+a = a + b;
+b = a - b;
+a = a - b;
+printf("swapped no.s are a = %d and b = %d",a,b);
+return 0;
+}
+
+---------------------------------------------------------------------
+
+5.
+#include<stdio.h>
+int main()
+{ 
+int num,x,sum =0;
+printf("enter number\n");
+scanf("%d",&num);
+x = num;
+while (num)
+{
+    x = num % 10;
+    sum = sum + x;
+    num = num / 10;
+}
+printf("%d",sum);
+return 0;
+}
+
+---------------------------------------------------------------------
+
+6.
+#include<stdio.h>
+int main()
+{ 
+char ch;
+printf("enter character\n");
+scanf("%c",&ch);
+printf("%d",ch);
+return 0;
+}
+
+---------------------------------------------------------------------
+
+7.
+#include<stdio.h>
+int main()
+{
+int x ,count = 0;
+int result = 0;
+printf("enter a number\n");
+scanf("%d",&x);
+while (x!=0)
+{
+result = x & 1;
+count ++;
+if(result == 1)
+{
+printf("%d",count);
+break;
+}
+x = x >> 1;
+}
+return 0;
+}
+
+---------------------------------------------------------------------
+
+8.
+#include<stdio.h>
+int main()
+{
+int num;
+printf("enter a number\n");
+scanf("%d",&num);
+if(num&1)
+printf("ODD");
+else
+printf("EVEN");
+return 0;
+}
+
+---------------------------------------------------------------------
+
+9.
+#include<stdio.h>
+int main()
+{ 
+int integer;
+char ch;
+float fl;
+double dbl;
+printf("%d\n",sizeof(integer));
+printf("%d\n",sizeof(ch));
+printf("%d\n",sizeof(fl));
+printf("%d\n",sizeof(dbl));
+return 0;
+}
+
+---------------------------------------------------------------------
+
+10.
+#include<stdio.h>
+int main()
+{ 
+int num;
+printf("enter number\n");
+scanf("%d",&num);
+num = num/10;
+printf("%d",num*10);
+
+return 0;
+}
+
+---------------------------------------------------------------------
+
+11.
+#include<stdio.h>
+int main()
+{ 
+int num,digit;
+printf("enter number\n");
+scanf("%d",&num);
+printf("enter digit\n");
+scanf("%d",&digit);
+printf("%d",num*10+digit);
+return 0;
+}
+
+---------------------------------------------------------------------
+
+12.
+#include<stdio.h>
+int main()
+{ 
+int amount,USD = 76.23;
+printf("enter amount in INR\n");
+scanf("%d",&amount);
+printf("Amount in USD = %d",amount/USD);
+return 0;
+}
+
+---------------------------------------------------------------------
+
+13.
+#include<stdio.h>
+int main()
+{
+int num,newnum ,x;
+printf("enter a three digit number\n");
+scanf("%d",&num);
+x = num % 10;
+newnum = x * 100 + ( num / 10 ) ;
+printf("%d",newnum);
+return 0;
+}
