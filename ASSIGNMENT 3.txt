@@ -1,0 +1,410 @@
+1.
+#include<stdio.h>
+int main()
+{
+int num ;
+printf("Enter a number\n");
+scanf("%d",&num);
+
+if(num>0)
+printf("Postive Number\n");
+else 
+printf("Non Positive Number\n");
+return 0;
+}
+
+---------------------------------------------------------------------
+
+2.
+#include<stdio.h>
+int main()
+{
+int num ;
+printf("Enter a number\n");
+scanf("%d",&num);
+
+if(num % 5 == 0)
+printf("Divisible  by 5\n");
+else 
+printf("Not divisible by 5\n");
+return 0;
+}
+
+---------------------------------------------------------------------
+
+3.
+#include<stdio.h>
+int main()
+{
+int num ;
+printf("Enter a number\n");
+scanf("%d",&num);
+
+if(num % 2 == 0)
+printf("Even Number\n");
+else 
+printf("Odd Number\n");
+return 0;
+}
+
+---------------------------------------------------------------------
+
+4.
+#include<stdio.h>
+int main()
+{
+int num ;
+printf("Enter a number\n");
+scanf("%d",&num);
+
+if((num & 1) == 0)
+printf("Even Number\n");
+else 
+printf("Odd Number\n");
+return 0;
+}
+
+---------------------------------------------------------------------
+
+5.
+#include<stdio.h>
+int main()
+{
+int num ;
+printf("Enter a number\n");
+scanf("%d",&num);
+
+if(num > 99 && num <1000)
+printf("Three digit Number\n");
+else 
+printf("Not a three digit Number\n");
+return 0;
+}
+
+---------------------------------------------------------------------
+
+6.
+#include<stdio.h>
+int main()
+{
+int num1 , num2;
+printf("Enter two number\n");
+scanf("%d %d",&num1, &num2);
+
+if(num1 > num2 )
+printf("%d",num1);
+else 
+printf("%d",num2);
+return 0;
+}
+
+---------------------------------------------------------------------
+
+7.
+#include<stdio.h>
+int main()
+{
+    int a,b,c,D;
+
+    printf("enter the value of a,b,c\n");
+    scanf("%d %d %d",&a,&b,&c);
+
+    D = b*b - 4*a*c;
+
+    if (D>0)
+        printf("real and distinct roots\n");
+    else if(D == 0)
+        printf("real and equal roots\n");
+    else
+        printf("imaginary roots\n");
+    return 0;
+}
+
+---------------------------------------------------------------------
+
+8.
+#include<stdio.h>
+int main()
+{
+    int year ;
+
+    printf("enter the year\n");
+    scanf("%d",&year);
+
+    if(year%100)
+    {
+        if(year%4)
+            printf("non leap");
+        else
+            printf("leap");
+    }
+    else
+        if(year%400)
+            printf("non leap");
+        else
+            printf("leap");
+    return 0;
+
+---------------------------------------------------------------------
+
+9.
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+
+    printf("Enter three numbers\n");
+    scanf("%d %d %d",&a,&b,&c);
+
+    if(a>b && a>c)
+    {
+        printf("%d is greatest",a);
+    }
+    else if (b>c)
+    {
+        printf("%d is greatest",b);
+    }
+    else
+    {  
+        printf("%d is greatest",c);
+    }
+    return 0;
+}
+
+---------------------------------------------------------------------
+
+10.
+#include<stdio.h>
+int main()
+{
+    float cp,sp,loss,profit,lp,pp;
+
+    printf("Enter  the cost price and selling price\n");
+    scanf("%f %f",&cp,&sp);
+
+    if(sp > cp)
+    {
+        profit = sp - cp;
+        pp = (profit /cp)*100;
+        printf("profit percentage = %f %% ",pp);
+    }
+    else
+    {
+        loss = cp - sp;
+        lp = (loss /cp)*100;
+        printf("loss pecentage = %f %%",lp);
+    }
+    return 0;
+}
+
+---------------------------------------------------------------------
+
+11.
+#include<stdio.h>
+int main()
+{
+    int physics,maths,cs,english,chem;
+
+    printf("Enter  the marks for physics : ");
+    scanf("%d",&physics);
+
+    printf("for mathematics : ");
+    scanf("%d",&maths);
+
+    printf("for chemistry : ");
+    scanf("%d",&chem);
+
+    printf("for computer science : ");
+    scanf("%d",&cs);
+
+    printf("for english : ");
+    scanf("%d",&english);
+
+    if(chem >= 33 && physics >= 33 && maths >= 33 && cs >= 33 && english >=33)
+    {
+        printf("       \"CONGRATULATIONS\"      \n");
+        printf(" YOU HAVE PASSED THE EXAMINATION\n");
+    }
+    else
+    {
+        printf("           \"SORRY\"            \n");
+        printf(" YOU HAVE FAILED THE EXAMINATION\n");
+    }
+    return 0;
+}
+
+---------------------------------------------------------------------
+
+12.
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("enter a character\n");
+    scanf("%c",&ch);
+    if(ch>=65 && ch<=91)
+    {
+        printf("UPPERCASE\n");
+    }
+    else if (ch >=97 && ch <= 123)
+    {
+        printf("LOWERCASE\n");
+    }
+    else 
+    printf("wrong input!!!!!");
+    return 0;
+}
+
+---------------------------------------------------------------------
+
+13.
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("enter a number\n");
+    scanf("%d",&num);
+    if(num % 2 == 0 && num % 3 == 0)
+    {
+        printf("number is divisible by 2 and 3\n");
+    }
+    else 
+    printf("number is not divisible by 2 and 3\n");
+
+    return 0;
+}
+
+---------------------------------------------------------------------
+
+14.
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("enter a number\n");
+    scanf("%d",&num);
+    if(num % 7 == 0 || num % 3 == 0)
+    {
+        printf("number is divisible by 3 or 7\n");
+    }
+    else 
+    printf("number is not divisible by 3 or 7\n");
+
+    return 0;
+}
+
+---------------------------------------------------------------------
+
+15.
+#include<stdio.h>
+int main()
+{
+    int num;
+    printf("enter a number\n");
+    scanf("%d",&num);
+    if(num > 0)
+    {
+        printf("Positive\n");
+    }
+    else
+    if(num<0)
+    {
+        printf("Negative\n");
+    }
+    else
+    {
+        printf("Number is zero");
+    }
+    
+    return 0;
+}
+
+---------------------------------------------------------------------
+
+16.
+#include<stdio.h>
+int main()
+{
+    char ch;
+    printf("enter a character\n");
+    scanf("%c",&ch);
+    if(ch >= 65 && ch <= 91)
+    {
+        printf("Alphabet(uppercase)\n");
+    }
+    else if(ch >= 97 && ch <= 123)
+    {
+        printf("Alphabet(lowercase)\n");
+    }
+    else if (ch >=0 && ch <= 9 )
+    {
+        printf("digit");
+    }
+    else
+    {
+        printf("special character\n");
+    }
+    
+    return 0;
+}
+
+---------------------------------------------------------------------
+
+17.
+#include<stdio.h>
+int main()
+{
+    int a,b,c;
+
+    printf("enter the sides of triangle\n");
+    scanf("%d %d %d",&a,&b,&c);
+
+    if((a+b)>c && (b+c)>a && (c+a)>b)
+    {
+        printf("triangle is possible\n");
+    }
+    else
+    {
+        printf("triangle not possible");
+    }
+    return 0;
+}
+
+---------------------------------------------------------------------
+
+18.
+#include<stdio.h>
+int main()
+{
+    int month;
+
+    printf("enter month\n");
+    scanf("%d",&month);
+
+    switch(month)
+    {
+        case 1 :
+        case 3 :
+        case 5 :
+        case 7 :
+        case 8 :
+        case 10 :
+        case 12 :
+        printf("31 days");
+        break;
+
+        case 2 :
+        printf("28 or 29 days");
+        break;
+
+        case 4 :
+        case 6 :
+        case 9 :
+        case 11 :
+        printf("30 days");
+        break;
+
+        default :
+        printf("wrong choice !!!");
+    }
+}
